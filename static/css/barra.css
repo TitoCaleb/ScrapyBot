@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 150px;
+    background-color: #fff;
+    font-family: SansSerif;
+}
+#searchbox{
+    width: 50%;
+    margin: auto;
+}
+#searchbox input,button{
+    width: 75%;
+    border: 2px solid black;
+    border-right: 0px;
+    font-size: 18px;
+    padding: 12px;
+    background: transparent;
+    color: black;
+}
+#searchbox button{
+    width: 25%;
+    background: black;
+    color: white;
+    float: right;
+    border-left: 0px;
+}
+#searchbox button:hover{
+    opacity: .8;
+}
+#searchbox input:hover{
+    opacity: .8;
+}

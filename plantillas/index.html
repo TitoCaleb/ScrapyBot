@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Metabuscador</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/responsive.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="site-title"><span>Meta</span>Buscador</a>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="index.html" data-toggle="dropdown">Inicio</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li><a href="portfolio.html">Productos</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="portfolio.html">Productos</a></li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav><!-- /.site-navigation -->
+        <!--<hr style="width: 75%;color:black;">-->
+    </header><!-- /#mastheaed -->
+
+    <div class="container" id="contenido">
+        <div id="caja" id="capa2">
+            <div class="row mb-3">
+                <div class="col-12" id="capa3">
+                    <h2 id="Titu">Metabuscador</h2>
+                </div>
+            </div>
+
+            <form action="{{url_for('addrec')}}" method="POST">
+                <div id="searchbox" class="row">
+                    <div class="col-12" id="capa3">
+                        <input placeholder="Buscar" name ="busqueda" type="text" class="form-control">
+                    </div>
+                    <div class="col-12" id="capa3">
+                        <button id="busqueda" class="btn btn-secondary">Buscar</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>-->
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+</body>
+</html>
